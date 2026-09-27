@@ -1,0 +1,42 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+:root {
+  --fit-bg: #090a09;
+  --fit-surface: #111310;
+  --fit-surface-2: #171914;
+  --fit-line: #292d27;
+  --fit-text: #f5f7ef;
+  --fit-muted: #92978b;
+  --fit-accent: #ccff00;
+  --fit-accent-dark: #a9d500;
+}
+
+@theme inline {
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-oswald);
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--fit-bg);
+  color: var(--fit-text);
+  font-family: var(--font-inter), Arial, sans-serif;
+}
+
+::selection { background: var(--fit-accent); color: #090a09; }
+
+.fit-noise {
+  background-image: radial-gradient(rgba(255,255,255,.045) 1px, transparent 1px);
+  background-size: 5px 5px;
+}
+
+.fit-display { font-family: var(--font-oswald), Impact, sans-serif; }
+.fit-border { border-color: var(--fit-line); }
+.fit-accent { color: var(--fit-accent); }
+.fit-accent-bg { background: var(--fit-accent); color: #090a09; }
+
+@keyframes fit-pulse { 0%,100% { opacity:.45 } 50% { opacity:1 } }
+.fit-pulse { animation: fit-pulse 1.2s ease-in-out infinite; }
