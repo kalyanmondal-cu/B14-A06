@@ -17,7 +17,7 @@ export default function Toast({
 
   if (!message) return null;
   return (
-    <div className="toast toast-end toast-bottom z-[100] p-4">
+    <div className="toast toast-end toast-bottom z-100 p-4">
       <div className="alert border-[#ccff00]/30 bg-[#151813] text-zinc-100 shadow-2xl">
         <span className="h-2 w-2 rounded-full bg-[#ccff00]" />
         <span className="font-semibold">{message}</span>

@@ -47,11 +47,11 @@ export default function HomePage() {
   }, [workouts, sort, query]);
 
   return (
-    <main className="pt-[52px]">
+    <main className="pt-13">
       {/* Hero Section Start */}
-      <section className="mx-auto w-full max-w-[1276px] overflow-hidden rounded-2xl border border-[#222630] bg-[#15171D]">
+      <section className="mx-auto w-full max-w-319 overflow-hidden rounded-2xl border border-[#222630] bg-[#15171D]">
         {" "}
-        <div className="grid min-h-[464px] grid-cols-1 items-center lg:grid-cols-[1fr_380px]">
+        <div className="grid min-h-116 grid-cols-1 items-center lg:grid-cols-[1fr_380px]">
           {" "}
           {/* ================= LEFT CONTENT ================= */}{" "}
           <div className="relative z-10 px-6 py-12 sm:px-10 lg:px-16">
@@ -95,12 +95,12 @@ export default function HomePage() {
             </div>{" "}
           </div>{" "}
           {/* ================= HERO IMAGE ================= */}{" "}
-          <div className="relative flex h-[300px] items-center justify-center lg:h-[448px]">
+          <div className="relative flex h-75 items-center justify-center lg:h-112">
             {" "}
             {/* Glow behind image */}{" "}
-            <div className="absolute h-[260px] w-[260px] rounded-full bg-[#C2F800]/5 blur-3xl" />{" "}
+            <div className="absolute h-65 w-65 rounded-full bg-[#C2F800]/5 blur-3xl" />{" "}
             {/* Hero Image */}{" "}
-            <div className="relative h-[280px] w-[280px] sm:h-[320px] sm:w-[320px] lg:h-[334px] lg:w-[334px]">
+            <div className="relative h-70 w-70 sm:h-80 sm:w-80 lg:h-83.5 lg:w-83.5">
               {" "}
               <Image
                 src="/images/fitlog-hero.png"
@@ -120,7 +120,7 @@ export default function HomePage() {
 
       <section
         id="library"
-        className="mx-auto max-w-[1400px] scroll-mt-24 px-5 py-16 sm:px-8 lg:px-10 lg:py-24"
+        className="mx-auto max-w-350 scroll-mt-24 px-5 py-16 sm:px-8 lg:px-10 lg:py-24"
       >
         <div className="mb-8 flex flex-col gap-5 border-b border-[#292d27] pb-7 md:flex-row md:items-end md:justify-between">
           <div>
